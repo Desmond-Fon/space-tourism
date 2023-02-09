@@ -18,6 +18,9 @@ module.exports = {
       fontFamily: {
         'bellefair': ['Bellefair', 'serif'],
         'barlow': ['Barlow Condensed', 'sans-serif']
+      },
+      backgroundImage: {
+        'home-pattern': "url('../../public/assets/home/background-home-mobile.jpg')",
       }
     },
   },
