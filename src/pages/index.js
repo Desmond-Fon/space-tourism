@@ -4,7 +4,7 @@ import Header from 'components/Header'
 
 
 export default function Home() {
-  return (<div className="bg-[url('../../public/assets/home/background-home-mobile.jpg')] md:bg-[url('../../public/assets/home/background-home-tablet.jpg')] lg:bg--[url('../../public/assets/home/background-home-desktop.jpg')] bg-center bg-cover w-screen h-screen">
+  return (<div className="bg-[url('../../public/assets/home/background-home-mobile.jpg')] md:bg-[url('../../public/assets/home/background-home-tablet.jpg')] lg:bg--[url('../../public/assets/home/background-home-desktop.jpg')] bg-center bg-cover">
     <Head>
       <title>
         Space Tourism | Home

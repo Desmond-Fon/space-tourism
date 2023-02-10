@@ -14,6 +14,7 @@ module.exports = {
         'darkBlue': '#0B0D17',
         'skyBlue': '#D0D6F9',
         'cream': '#FFFFFF',
+        'lineColor': '#383B4B',
         'trans': 'rgba(255, 255, 255, 0.04)'
       },
       fontFamily: {
