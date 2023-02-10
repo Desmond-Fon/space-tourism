@@ -17,8 +17,8 @@ module.exports = {
         'trans': 'rgba(255, 255, 255, 0.04)'
       },
       fontFamily: {
-        'bellefair': ['Bellefair', 'serif'],
-        'barlow': ['Barlow Condensed', 'sans-serif']
+        'bellefair': ['Bellefair'],
+        'barlow': ['Barlow Condensed']
       },
       backgroundImage: {
         'home-pattern': "url('../../public/assets/home/background-home-mobile.jpg')",
