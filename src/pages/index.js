@@ -17,17 +17,17 @@ export default function Home() {
           SPACE
         </h1>
         <p className="text-skyBlue font-barlow font-normal mt-[16px] text-[15px] leading-[25px]">
-          Let’s face it; if you want to go to space, you might as well genuinely
+          Let&apos;s face it; if you want to go to space, you might as well genuinely
           go to outer space and not hover kind of on the edge of it. Well sit
-          back, and relax because we’ll give you a truly out of this world
+          back, and relax because we&apos;ll give you a truly out of this world
           experience!
         </p>
 
         <div className="flex justify-center items-center">
           <div className="mt-[81px] h-[150px] w-[150px] rounded-full bg-cream flex justify-center items-center hover:drop-shadow-2xl">
-            <p className="text-center font-normal text-[20px] leading-[23px] tracking-[1.25px] text-darkBlue font-bellefair">
+            <button className="text-center font-normal text-[20px] leading-[23px] tracking-[1.25px] text-darkBlue font-bellefair">
               EXPLORE
-            </p>
+            </button>
           </div>
         </div>
       </main>

@@ -53,7 +53,7 @@ const Europa = () => {
         </h1>
         <p className="font-barlow text-center px-[24px] text-skyBlue text-[15px] leading-[25px] font-[400]">
           The smallest of the four Galilean moons orbiting Jupiter, Europa is a
-          winter lover’s dream. With an icy surface, it’s perfect for a bit of
+          winter lover&apos;s dream. With an icy surface, it&apos;s perfect for a bit of
           ice skating, curling, hockey, or simple relaxation in your snug
           wintery cabin.
         </p>

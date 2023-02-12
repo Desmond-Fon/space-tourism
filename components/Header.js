@@ -27,21 +27,21 @@ const Header = () => {
           href="/destination"
           className="mb-[32px] font-barlow font-normal text-base tracking-[2.7px] text-cream"
         >
-          <span className="font-barlow font-[700] pr-[11px]">01</span>{" "}
+          <span className="font-barlow font-[700] pr-[11px]">01</span>
           DESTINATION
         </Link>
         <Link
           href="/crew"
           className="mb-[32px] font-barlow font-normal text-base tracking-[2.7px] text-cream"
         >
-          <span className="font-barlow font-bold text-base pr-[11px]">02</span>{" "}
+          <span className="font-barlow font-bold text-base pr-[11px]">02</span>
           CREW
         </Link>
         <Link
           href="/technology"
           className="mb-[32px] font-barlow font-normal text-base leading-4 tracking-[2.7px] text-cream"
         >
-          <span className="font-barlow font-[700] pr-[11px]">03</span>{" "}
+          <span className="font-barlow font-[700] pr-[11px]">03</span>
           TECHNOLOGY
         </Link>
       </div>
@@ -71,8 +71,8 @@ const Header = () => {
               width={20}
               height={20}
             />
-          </div>{" "}
-          {menu}{" "}
+          </div>
+          {menu}
         </div>
       )}
     </div>

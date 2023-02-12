@@ -41,7 +41,7 @@ const Mars = () => {
             EUROPA
           </Link>
           <Link
-            href="/destination.titan"
+            href="/destination/titan"
             className="ml-[27px] hover:border-b-[3px] hover:border-skyBlue cursor-pointer pb-[8px] active:text-cream active:border-cream"
           >
             TITAN
@@ -52,8 +52,8 @@ const Mars = () => {
           MARS
         </h1>
         <p className="font-barlow text-center px-[24px] text-skyBlue text-[15px] leading-[25px] font-[400]">
-          Don’t forget to pack your hiking boots. You’ll need them to tackle
-          Olympus Mons, the tallest planetary mountain in our solar system. It’s
+          Don&apos;t forget to pack your hiking boots. You&apos;ll need them to tackle
+          Olympus Mons, the tallest planetary mountain in our solar system. It&apos;s
           two and a half times the size of Everest!
         </p>
 
