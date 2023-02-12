@@ -51,7 +51,7 @@ const Header = () => {
   return (
     <div className="p-[24px] md:pr-0 md:pt-0 flex items-center justify-between">
       <Link href="/">
-        <Image src={logo} alt="" width={40} height={40} />
+        <Image src={logo} alt="" width={40} height={40} className='md:w-[48px] md:h-[48px]' />
       </Link>
       {isOpen ? (
         <Image
