@@ -49,7 +49,7 @@ const Header = () => {
   }
 
   return (
-    <div className="p-[24px] flex items-center justify-between">
+    <div className="p-[24px] md:pr-0 md:pt-0 flex items-center justify-between">
       <Link href="/">
         <Image src={logo} alt="" width={40} height={40} />
       </Link>
@@ -60,6 +60,7 @@ const Header = () => {
           onClick={toggleOpen}
           width={24}
           height={21}
+          className="md:hidden"
         />
       ) : (
         <div className="absolute right-[0] top-[0px] h-[100%] w-[254px] backdrop-blur-[50px] bg-trans py-[33px] px-[26px]">
@@ -75,6 +76,34 @@ const Header = () => {
           {menu}
         </div>
       )}
+      <div className="hidden md:flex h-[96px] md:backdrop-blur-[50px] bg-trans justify-center items-center">
+        <div className="text-white flex justify-center items-center">
+          <Link
+            href="/"
+            className="font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] ml-[40px] active:border-b-[3px] active:border-cream"
+          >
+            HOME
+          </Link>
+          <Link
+            href="/destination"
+            className="font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] active:border-b-[3px] active:border-cream"
+          >
+            DESTINATION
+          </Link>
+          <Link
+            href="/crew"
+            className="font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] active:border-b-[3px] active:border-cream"
+          >
+            CREW
+          </Link>
+          <Link
+            href="/technology"
+            className="font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[40px] active:border-b-[3px] active:border-cream"
+          >
+            TECHNOLOGY
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };

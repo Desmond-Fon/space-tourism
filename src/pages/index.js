@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "components/Header";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -25,9 +26,11 @@ export default function Home() {
 
         <div className="flex justify-center items-center">
           <div className="mt-[81px] h-[150px] w-[150px] rounded-full bg-cream flex justify-center items-center hover:drop-shadow-2xl">
-            <button className="text-center font-normal text-[20px] leading-[23px] tracking-[1.25px] text-darkBlue font-bellefair">
+           <Link href='/destination'>
+           <button className="text-center font-normal text-[20px] leading-[23px] tracking-[1.25px] text-darkBlue font-bellefair">
               EXPLORE
             </button>
+            </Link>
           </div>
         </div>
       </main>
