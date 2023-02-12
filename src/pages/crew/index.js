@@ -26,13 +26,13 @@ const Crew = () => {
             <div className="w-[10px] h-[10px] bg-cream rounded-full opacity-[0.17] hover:opacity-[0.5] active:opacity-[1]"></div>
           </Link>
           <Link href="/crew/mark">
-            <div className="w-[10px] h-[10px] bg-cream rounded-full ml-[16px] opacity-[0.17] hover:opacity-[0.5]"></div>
+            <div className="w-[10px] h-[10px] bg-cream rounded-full ml-[16px] opacity-[0.17] hover:opacity-[0.5] active:opacity-[1]"></div>
           </Link>
           <Link href="/crew/victor">
-            <div className="w-[10px] h-[10px] bg-cream rounded-full  ml-[16px] opacity-[0.17] hover:opacity-[0.5]"></div>
+            <div className="w-[10px] h-[10px] bg-cream rounded-full  ml-[16px] opacity-[0.17] hover:opacity-[0.5] active:opacity-[1]"></div>
           </Link>
           <Link href="/crew/anousheh">
-            <div className="w-[10px] h-[10px] bg-cream rounded-full ml-[16px] opacity-[0.17] hover:opacity-[0.5]"></div>
+            <div className="w-[10px] h-[10px] bg-cream rounded-full ml-[16px] opacity-[0.17] hover:opacity-[0.5] active:opacity-[1]"></div>
           </Link>
         </div>
 
