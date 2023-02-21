@@ -13,7 +13,6 @@ const Destination = () => {
           landing sites."
         distance="384,400 KM"
         time="3 DAYS"
-        width="170px"
       />
     </>
   );
