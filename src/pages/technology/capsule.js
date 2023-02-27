@@ -1,8 +1,4 @@
-import Header from "components/Header";
 import TechnologyPage from "components/TechnologyPage";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
 import capsule from "../../../public/assets/technology/image-space-capsule-landscape.jpg";
 
 const Vehicle = () => {

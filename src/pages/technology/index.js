@@ -1,8 +1,4 @@
-import Header from "components/Header";
 import TechnologyPage from "components/TechnologyPage";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
 import vehicle from "../../../public/assets/technology/image-launch-vehicle-landscape.jpg";
 
 const Technology = () => {
