@@ -2,7 +2,6 @@ import Header from "components/Header";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import vehicle from "../../../public/assets/technology/image-launch-vehicle-landscape.jpg";
 
 const TechnologyPage = ({picture, tech, techParagraph}) => {
   return (
