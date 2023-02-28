@@ -9,7 +9,7 @@ const CrewPage = ({ width, picture, name, post, description , height}) => {
       <Head>
         <title>Space Tourism | Crew</title>
       </Head>
-      <div className="bg-[url('../../public/assets/crew/background-crew-mobile.jpg')] md:bg-[url('../../public/assets/crew/background-crew-tablet.jpg')] lg:bg--[url('../../public/assets/crew/background-crew-desktop.jpg')] bg-center bg-cover h-screen w-full md:h-screen pb-[154px] md:p-0">
+      <div className="bg-[url('../../public/assets/crew/background-crew-mobile.jpg')] md:bg-[url('../../public/assets/crew/background-crew-tablet.jpg')] lg:bg-[url('../../public/assets/crew/background-crew-desktop.jpg')] bg-center bg-cover h-screen w-full md:h-screen pb-[154px] md:p-0">
         <Header />
         <h1 className="mt-[24px] md:mt-[40px] md:text-[20px] md:tracking-[3.38px] md:leading-[24px] md:text-left md:mb-[60px] mb-[32px] text-center font-barlow text-cream tracking-[2.7px] leading-[19.2px] text-[16px] md:pl-[24px]">
           <span className="pr-[10px] opacity-[0.25] font-bold">02</span>MEET
