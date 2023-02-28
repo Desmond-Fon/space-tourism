@@ -49,7 +49,7 @@ const Header = () => {
   }
 
   return (
-    <div className="p-[24px] md:pr-0 md:pt-0 flex items-center justify-between">
+    <div className="p-[24px] md:pr-0 md:pt-0 flex items-center justify-between lg:pl-[55px] lg:pt-[40px]">
       <Link href="/">
         <Image src={logo} alt="" width={40} height={40} className='md:w-[48px] md:h-[48px]' />
       </Link>
@@ -76,30 +76,30 @@ const Header = () => {
           {menu}
         </div>
       )}
-      <div className="hidden md:flex h-[96px] md:backdrop-blur-[50px] bg-trans justify-center items-center">
-        <div className="text-white flex justify-center items-center">
+      <div className="hidden md:flex h-[96px] md:backdrop-blur-[50px] bg-trans justify-center items-center lg:w-[840px]">
+        <div className="text-white flex justify-center items-center lg:justify-between lg:ml-[123px] lg:mr-[165px] w-full">
           <Link
             href="/"
-            className="font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] ml-[40px] active:border-b-[3px] active:border-cream"
-          >
+            className="font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] ml-[40px] active:border-b-[3px] active:border-cream lg:ml-0 lg:mr-[48px]"
+          > <span className="hidden lg:inline mr-[11px] font-[700] tracking-[2.7px]">00</span>
             HOME
           </Link>
           <Link
             href="/destination"
-            className="font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] active:border-b-[3px] active:border-cream"
-          >
+            className="font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] active:border-b-[3px] active:border-cream lg:mr-[48px]"
+          > <span className="hidden lg:inline mr-[11px] font-[700] tracking-[2.7px]">01</span>
             DESTINATION
           </Link>
           <Link
             href="/crew"
-            className="font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] active:border-b-[3px] active:border-cream"
-          >
+            className="font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] active:border-b-[3px] active:border-cream lg:mr-[48px]"
+          > <span className="hidden lg:inline mr-[11px] font-[700] tracking-[2.7px]">02</span>
             CREW
           </Link>
           <Link
             href="/technology"
-            className="font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[40px] active:border-b-[3px] active:border-cream"
-          >
+            className="font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[40px] active:border-b-[3px] active:border-cream lg:mr-[48px]"
+          > <span className="hidden lg:inline mr-[11px] font-[700] tracking-[2.7px]">03</span>
             TECHNOLOGY
           </Link>
         </div>

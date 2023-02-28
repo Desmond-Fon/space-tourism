@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-const CrewPage = ({ width, picture, name, post, description }, height) => {
+const CrewPage = ({ width, picture, name, post, description , height}) => {
   return (
     <div className="h-full">
       <Head>
