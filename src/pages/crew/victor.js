@@ -5,8 +5,9 @@ const Victor = () => {
   return (
     <>
       <CrewPage
-        width="w-[181px] md:w-[433px]"
-        height="h-[222px] md:h-[532px]"
+        width="w-[181px] md:w-[433px] lg:w-[554px]"
+        height="h-[222px] md:h-[532px] lg:h-[681px]"
+        padding="lg:mr-[140px]"
         picture={victor}
         post="PILOT"
         name="VICTOR GLOVER"

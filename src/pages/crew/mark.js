@@ -5,8 +5,9 @@ const Mark = () => {
   return (
     <>
       <CrewPage
-        width="w-[154px] md:w-[369px]"
-        height="h-[222px] md:h-[532px]"
+        width="w-[154px] md:w-[369px] lg:w-[453px]"
+        height="h-[222px] md:h-[532px] lg:h-[654px]"
+        padding="lg:mr-[176px]"
         picture={mark}
         post="MISSION SPECIALIST"
         name="MARK SHUTTLEWORTH"

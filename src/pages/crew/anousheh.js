@@ -5,8 +5,9 @@ const Anousheh = () => {
   return (
     <>
       <CrewPage
-        width="w-[226px] md:w-[540px]"
-        height="h-[222px] md:h-[532px]"
+        width="w-[226px] md:w-[540px] lg:w-[615.5px]"
+        height="h-[222px] md:h-[532px] lg:w-[607px]"
+        padding="lg:mr-[90px]"
         picture={anousheh}
         name="ANOUSHEH ANSARI"
         post="FLIGHT ENGINEER"
