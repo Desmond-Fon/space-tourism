@@ -1,11 +1,13 @@
 import TechnologyPage from "components/TechnologyPage";
 import capsule from "../../../public/assets/technology/image-space-capsule-landscape.jpg";
+import desktop from "../../../public/assets/technology/image-space-capsule-portrait.jpg";
 
 const Vehicle = () => {
   return (
     <>
       <TechnologyPage
         picture={capsule}
+        desktopPicture={desktop}
         tech="SPACE CAPSULE"
         techParagraph="A space capsule is an often-crewed spacecraft that uses a blunt-body
           reentry capsule to reenter the Earth's atmosphere without wings.

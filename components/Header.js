@@ -76,7 +76,7 @@ const Header = () => {
           {menu}
         </div>
       )}
-      <div className="hidden md:flex h-[96px] md:backdrop-blur-[50px] bg-trans justify-center items-center lg:w-[840px]">
+      <div className="hidden md:flex h-[96px] md:backdrop-blur-[50px] bg-trans justify-center items-center lg:w-[830px]">
         <div className="text-white flex justify-center items-center lg:justify-between lg:ml-[123px] lg:mr-[165px] w-full">
           <Link
             href="/"

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="bg-[url('../../public/assets/home/background-home-mobile.jpg')] md:bg-[url('../../public/assets/home/background-home-tablet.jpg')] lg:bg-[url('../../public/assets/home/background-home-desktop.jpg')] bg-center bg-cover w-full h-full lg:h-full md:h-screen">
+    <div className="bg-[url('../../public/assets/home/background-home-mobile.jpg')] md:bg-[url('../../public/assets/home/background-home-tablet.jpg')] lg:bg-[url('../../public/assets/home/background-home-desktop.jpg')] bg-center bg-cover w-full h-screen lg:h-full md:h-screen">
       <Head>
         <title>Space Tourism | Home</title>
       </Head>
