@@ -2,6 +2,7 @@ import Header from "components/Header";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const DestinationPage = ({
   picture,
@@ -10,6 +11,7 @@ const DestinationPage = ({
   planetParagraph,
   distance,
 }) => {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -35,25 +37,41 @@ const DestinationPage = ({
             <div className="text-skyBlue font-barlow tracking-[2.36px] leading-[16.9px] text-[14px] flex justify-center items-center md:text-[16px] md:tracking-[2.7px] md:leading-[19.2px] lg:mb-[37px] lg:justify-between lg:w-[285px]">
               <Link
                 href="/destination"
-                className=" hover:border-b-[3px] hover:border-skyBlue cursor-pointer pb-[8px] active:text-cream active:border-cream md:pb-[12px]"
+                className={` ${
+                  router.asPath === "/destination"
+                    ? "border-b-[3px] cursor-pointer pb-[8px] text-cream border-cream md:pb-[12px]"
+                    : "hover:border-b-[3px] hover:border-skyBlue cursor-pointer pb-[8px] active:text-cream active:border-cream md:pb-[12px]"
+                }`}
               >
                 MOON
               </Link>
               <Link
                 href="/destination/mars"
-                className="ml-[27px] hover:border-b-[3px] hover:border-skyBlue cursor-pointer pb-[8px] active:text-cream active:border-cream md:ml-[35px] md:pb-[12px] lg:ml-0"
+                className={` ${
+                  router.asPath === "/destination/mars"
+                    ? "ml-[27px] lg:ml-0 border-b-[3px] cursor-pointer pb-[8px] text-cream border-cream md:pb-[12px]"
+                    : "ml-[27px] lg:ml-0 hover:border-b-[3px] hover:border-skyBlue cursor-pointer pb-[8px] active:text-cream active:border-cream md:pb-[12px]"
+                }`}
               >
                 MARS
               </Link>
               <Link
                 href="/destination/europa"
-                className="ml-[27px] hover:border-b-[3px] hover:border-skyBlue cursor-pointer pb-[8px] active:text-cream active:border-cream md:ml-[35px] md:pb-[12px] lg:ml-0"
+                className={` ${
+                  router.asPath === "/destination/europa"
+                    ? "ml-[27px] lg:ml-0 border-b-[3px] cursor-pointer pb-[8px] text-cream border-cream md:pb-[12px]"
+                    : "ml-[27px] hover:border-b-[3px] hover:border-skyBlue cursor-pointer pb-[8px] active:text-cream active:border-cream md:ml-[35px] md:pb-[12px] lg:ml-0"
+                }`}
               >
                 EUROPA
               </Link>
               <Link
                 href="/destination/titan"
-                className="ml-[27px] hover:border-b-[3px] hover:border-skyBlue cursor-pointer pb-[8px] active:text-cream active:border-cream md:ml-[35px] md:pb-[12px] lg:ml-0"
+                className={` ${
+                  router.asPath === "/destination/titan"
+                    ? "ml-[27px] lg:ml-0 border-b-[3px] cursor-pointer pb-[8px] text-cream border-cream md:pb-[12px]"
+                    : "ml-[27px] lg:ml-0 hover:border-b-[3px] hover:border-skyBlue cursor-pointer pb-[8px] active:text-cream active:border-cream md:ml-[35px] md:pb-[12px] "
+                }`}
               >
                 TITAN
               </Link>

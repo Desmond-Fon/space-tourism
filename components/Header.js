@@ -4,9 +4,12 @@ import close from "../public/assets/shared/icon-close.svg";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(true);
+
+  const router = useRouter();
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);
@@ -51,7 +54,13 @@ const Header = () => {
   return (
     <div className="p-[24px] md:pr-0 md:pt-0 flex items-center justify-between lg:pl-[55px] lg:pt-[40px]">
       <Link href="/">
-        <Image src={logo} alt="" width={40} height={40} className='md:w-[48px] md:h-[48px]' />
+        <Image
+          src={logo}
+          alt=""
+          width={40}
+          height={40}
+          className="md:w-[48px] md:h-[48px]"
+        />
       </Link>
       {isOpen ? (
         <Image
@@ -80,26 +89,58 @@ const Header = () => {
         <div className="text-white flex justify-center items-center lg:justify-between lg:ml-[123px] lg:mr-[165px] w-full">
           <Link
             href="/"
-            className="font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] ml-[40px] active:border-b-[3px] active:border-cream lg:ml-0 lg:mr-[48px]"
-          > <span className="hidden lg:inline mr-[11px] font-[700] tracking-[2.7px]">00</span>
+            className={` ${
+              router.asPath === "/"
+                ? "font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] ml-[40px] border-b-[3px] border-cream lg:ml-0 lg:mr-[48px]"
+                : "font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] ml-[40px] active:border-b-[3px] active:border-cream lg:ml-0 lg:mr-[48px] md:pb-[10px]"
+            }`}
+          >
+            {" "}
+            <span className="hidden lg:inline mr-[11px] font-[700] tracking-[2.7px]">
+              00
+            </span>
             HOME
           </Link>
           <Link
             href="/destination"
-            className="font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] active:border-b-[3px] active:border-cream lg:mr-[48px]"
-          > <span className="hidden lg:inline mr-[11px] font-[700] tracking-[2.7px]">01</span>
+            className={` ${
+              router.asPath === "/destination"
+                ? "font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] border-b-[3px] border-cream lg:mr-[48px]"
+                : "font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] active:border-b-[3px] active:border-cream lg:mr-[48px]"
+            }`}
+          >
+            {" "}
+            <span className="hidden lg:inline mr-[11px] font-[700] tracking-[2.7px]">
+              01
+            </span>
             DESTINATION
           </Link>
           <Link
             href="/crew"
-            className="font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] active:border-b-[3px] active:border-cream lg:mr-[48px]"
-          > <span className="hidden lg:inline mr-[11px] font-[700] tracking-[2.7px]">02</span>
+            className={` ${
+              router.asPath === "/crew"
+                ? "font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] border-b-[3px] border-cream lg:mr-[48px]"
+                : "font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] active:border-b-[3px] active:border-cream lg:mr-[48px]"
+            }`}
+          >
+            {" "}
+            <span className="hidden lg:inline mr-[11px] font-[700] tracking-[2.7px]">
+              02
+            </span>
             CREW
           </Link>
           <Link
             href="/technology"
-            className="font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[40px] active:border-b-[3px] active:border-cream lg:mr-[48px]"
-          > <span className="hidden lg:inline mr-[11px] font-[700] tracking-[2.7px]">03</span>
+            className={` ${
+              router.asPath === "/technology"
+                ? "font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] border-b-[3px] border-cream lg:mr-[48px]"
+                : "font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] active:border-b-[3px] active:border-cream lg:mr-[48px]"
+            }`}
+          >
+            {" "}
+            <span className="hidden lg:inline mr-[11px] font-[700] tracking-[2.7px]">
+              03
+            </span>
             TECHNOLOGY
           </Link>
         </div>

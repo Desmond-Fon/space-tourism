@@ -2,8 +2,11 @@ import Header from "components/Header";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const CrewPage = ({ width, picture, name, post, description , height, padding}) => {
+  const router = useRouter();
+
   return (
     <div className="h-full">
       <Head>
@@ -23,16 +26,40 @@ const CrewPage = ({ width, picture, name, post, description , height, padding}) 
 
           <div className="flex justify-center items-center mb-[32px] md:mb-[40px] lg:hidden">
             <Link href="/crew">
-              <div className="w-[10px] h-[10px] bg-cream rounded-full opacity-[0.17] hover:opacity-[0.5] active:opacity-[1]"></div>
+              <div
+               className={` ${
+                router.asPath === "/crew"
+                  ? "w-[10px] h-[10px] bg-cream rounded-full  hover:opacity-[0.5] opacity-[1]"
+                  : "w-[10px] h-[10px] bg-cream rounded-full opacity-[0.17] hover:opacity-[0.5] active:opacity-[1]"
+              }`}
+              ></div>
             </Link>
             <Link href="/crew/mark">
-              <div className="w-[10px] h-[10px] bg-cream rounded-full ml-[16px] opacity-[0.17] hover:opacity-[0.5] active:opacity-[1]"></div>
+            <div
+               className={` ${
+                router.asPath === "/crew/mark"
+                  ? "w-[10px] h-[10px] bg-cream rounded-full  hover:opacity-[0.5] opacity-[1] ml-[16px]"
+                  : "w-[10px] h-[10px] bg-cream rounded-full opacity-[0.17] hover:opacity-[0.5] ml-[16px] active:opacity-[1]"
+              }`}
+              ></div>
             </Link>
             <Link href="/crew/victor">
-              <div className="w-[10px] h-[10px] bg-cream rounded-full  ml-[16px] opacity-[0.17] hover:opacity-[0.5] active:opacity-[1]"></div>
+            <div
+               className={` ${
+                router.asPath === "/crew/victor"
+                  ? "w-[10px] h-[10px] bg-cream rounded-full  hover:opacity-[0.5] opacity-[1] ml-[16px]"
+                  : "w-[10px] h-[10px] bg-cream rounded-full opacity-[0.17] hover:opacity-[0.5] ml-[16px] active:opacity-[1]"
+              }`}
+              ></div>
             </Link>
             <Link href="/crew/anousheh">
-              <div className="w-[10px] h-[10px] bg-cream rounded-full ml-[16px] opacity-[0.17] hover:opacity-[0.5] active:opacity-[1]"></div>
+            <div
+               className={` ${
+                router.asPath === "/crew/anousheh"
+                  ? "w-[10px] h-[10px] bg-cream rounded-full  hover:opacity-[0.5] opacity-[1] ml-[16px]"
+                  : "w-[10px] h-[10px] bg-cream rounded-full opacity-[0.17] hover:opacity-[0.5] ml-[16px] active:opacity-[1]"
+              }`}
+              ></div>
             </Link>
           </div>
 
@@ -51,16 +78,40 @@ const CrewPage = ({ width, picture, name, post, description , height, padding}) 
 
             <div className="hidden lg:flex justify-start items-center mb-[32px] md:mb-[40px]">
             <Link href="/crew">
-              <div className="w-[10px] h-[10px] bg-cream rounded-full opacity-[0.17] hover:opacity-[0.5] active:opacity-[1]"></div>
+            <div
+               className={` ${
+                router.asPath === "/crew"
+                  ? "w-[10px] h-[10px] bg-cream rounded-full  hover:opacity-[0.5] opacity-[1]"
+                  : "w-[10px] h-[10px] bg-cream rounded-full opacity-[0.17] hover:opacity-[0.5] active:opacity-[1]"
+              }`}
+              ></div>
             </Link>
             <Link href="/crew/mark">
-              <div className="w-[10px] h-[10px] bg-cream rounded-full ml-[16px] opacity-[0.17] hover:opacity-[0.5] active:opacity-[1]"></div>
+            <div
+               className={` ${
+                router.asPath === "/crew/mark"
+                  ? "w-[10px] h-[10px] bg-cream rounded-full  hover:opacity-[0.5] opacity-[1] ml-[16px]"
+                  : "w-[10px] h-[10px] bg-cream rounded-full opacity-[0.17] hover:opacity-[0.5] ml-[16px] active:opacity-[1]"
+              }`}
+              ></div>
             </Link>
             <Link href="/crew/victor">
-              <div className="w-[10px] h-[10px] bg-cream rounded-full  ml-[16px] opacity-[0.17] hover:opacity-[0.5] active:opacity-[1]"></div>
+            <div
+               className={` ${
+                router.asPath === "/crew/victor"
+                  ? "w-[10px] h-[10px] bg-cream rounded-full  hover:opacity-[0.5] opacity-[1] ml-[16px]"
+                  : "w-[10px] h-[10px] bg-cream rounded-full opacity-[0.17] hover:opacity-[0.5] ml-[16px] active:opacity-[1]"
+              }`}
+              ></div>
             </Link>
             <Link href="/crew/anousheh">
-              <div className="w-[10px] h-[10px] bg-cream rounded-full ml-[16px] opacity-[0.17] hover:opacity-[0.5] active:opacity-[1]"></div>
+            <div
+               className={` ${
+                router.asPath === "/crew/anousheh"
+                  ? "w-[10px] h-[10px] bg-cream rounded-full  hover:opacity-[0.5] opacity-[1] ml-[16px]"
+                  : "w-[10px] h-[10px] bg-cream rounded-full opacity-[0.17] hover:opacity-[0.5] ml-[16px] active:opacity-[1]"
+              }`}
+              ></div>
             </Link>
           </div>
 
