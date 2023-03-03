@@ -92,7 +92,7 @@ const Header = () => {
             className={` ${
               router.asPath === "/"
                 ? "font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] ml-[40px] border-b-[3px] border-cream lg:ml-0 lg:mr-[48px]"
-                : "font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] ml-[40px] active:border-b-[3px] active:border-cream lg:ml-0 lg:mr-[48px] md:pb-[10px]"
+                : "font-barlow font-normal text-base leading-[16.8px] tracking-[2.4px] text-cream mr-[37px] ml-[40px] active:border-b-[3px] active:border-cream lg:ml-0 lg:mr-[48px]"
             }`}
           >
             {" "}
