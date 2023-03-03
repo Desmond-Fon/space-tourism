@@ -72,7 +72,7 @@ const Header = () => {
           className="md:hidden"
         />
       ) : (
-        <div className="absolute right-[0] top-[0px] h-[100%] w-[254px] backdrop-blur-[50px] bg-trans py-[33px] px-[26px] z-80">
+        <div className="absolute right-[0] top-[0px] h-[100%] w-[254px] backdrop-blur-[50px] bg-trans py-[33px] px-[26px] z-20">
           <div className="flex justify-end">
             <Image
               src={close}

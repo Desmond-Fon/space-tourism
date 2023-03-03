@@ -12,7 +12,7 @@ const TechnologyPage = ({ picture, tech, techParagraph, desktopPicture }) => {
       <Head>
         <title>Space Tourism | Technology</title>
       </Head>
-      <div className="bg-[url('../../public/assets/technology/background-technology-mobile.jpg')] md:bg-[url('../../public/assets/technology/background-technology-tablet.jpg')] lg:bg-[url('../../public/assets/technology/background-technology-desktop.jpg')] bg-center bg-cover w-[100vw] h-screen md:h-[100vh] lg:h-full">
+      <div className="bg-[url('../../public/assets/technology/background-technology-mobile.jpg')] md:bg-[url('../../public/assets/technology/background-technology-tablet.jpg')] lg:bg-[url('../../public/assets/technology/background-technology-desktop.jpg')] bg-center bg-cover w-[100%] h-screen md:h-[100vh] lg:h-full">
         <Header />
         <h1 className="mt-[24px] md:mt-[40px] md:text-[20px] md:tracking-[3.38px] md:leading-[24px] md:text-left md:mb-[60px] mb-[32px] text-center font-barlow text-cream tracking-[2.7px] leading-[19.2px] text-[16px] md:pl-[24px] lg:mt-[76px] lg:ml-[166.5px] lg:text-[28px] lg:tracking-[4.72px] lg:leading-[33.6px] lg:mb-[26px]">
           <span className="pr-[10px] opacity-[0.25] font-bold">03</span>SPACE
@@ -20,7 +20,7 @@ const TechnologyPage = ({ picture, tech, techParagraph, desktopPicture }) => {
         </h1>
 
         <div className="lg:flex lg:justify-between lg:flex-row-reverse lg:pb-[101px] lg:items-center lg:overflow-x-hidden">
-          <div className="mb-[34px] w-full md:mb-[56px] lg:mb-0 bg-blue-400">
+          <div className="mb-[34px] w-full md:mb-[56px] lg:mb-0">
             <Image
               src={picture}
               alt=""
